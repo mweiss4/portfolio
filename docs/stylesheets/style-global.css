@@ -1,0 +1,10 @@
+@import "style-color.css";
+@import "style-text.css";
+
+.frame {
+    border: 1px solid red;
+}
+
+.frame-fixed {
+    border: 1px solid green;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive gallery</title>
+    <script src="../../lib/jquery-3.6.0.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../lib/lightbox2-2/css/lightbox.css">
+</head>
+<body>
+    <h1>hello</h1>
+
+    <a href="//picsum.photos/id/508/1000/1000" data-lightbox="image-1" data-title="my caption">
+        <img src="//picsum.photos/id/508/1000/1000" alt="placeholder">
+        <img src="//picsum.photos/id/509/1000/1000" alt="placeholder">
+    </a>
+
+    <script>
+        // link scripts from the bottom of the body tag, but full libraries in the head
+        // script to add text to p.sample-text
+        // ALWAYS HAVE CONSOLE OPEN WHEN WORKING WITH JS
+        console.log("hello");
+    </script>
+    <script src="../../lib/lightbox2-2/js/lightbox.js">
+    </script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 20000,
+            'wrapAround': true
+        })
+    </script>
+</body>
+</html>

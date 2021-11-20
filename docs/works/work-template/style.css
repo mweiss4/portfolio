@@ -1,0 +1,261 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.container {
+  height: auto;
+  border: 2px solid blue;
+}
+
+.grid-main {
+  margin: 0 auto;
+  display: grid;
+  height: auto;
+/*   min-height: 100vh; */
+  grid-template-columns: minmax(180px, auto) minmax(720px, 800px) minmax(180px, auto);
+  max-width: 1200px;
+  align-items: stretch;
+  border: 2px solid blue;
+}
+
+.header-left {
+  position: sticky;
+  top: 0;
+  display: flex;
+  
+  justify-content: right;
+  
+  grid-row: 1;
+  grid-column: 1 / span 1;
+  border: 2px solid orange;
+  height: 200px;
+}
+
+.header-center{
+/*   position: sticky; */
+/*   top: 0; */
+  
+  grid-row: 1;
+  grid-column: 2 / span 1;
+  border: 2px solid orange;
+  height: 200px;
+}
+
+.header-right {
+/*   position: sticky; */
+/*   top: 0; */
+  
+  grid-row: 1;
+  grid-column: 3 / span 1;
+  border: 2px solid orange;
+  height: 200px;
+}
+
+
+.footer{
+  grid-row: 3;
+  grid-column: 2 / span 1;
+  border: 2px solid purple;
+  height: 200px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column {
+  grid-row: 2;
+  grid-column: 1 / span 1;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.right-column {
+  
+  grid-row: 2;
+  grid-column: 3 / span 1;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.grid-content {
+  grid-row: 2;
+  grid-column: 2 / span 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, auto));
+  grid-auto-flow: row;
+}
+
+.grid-content-container {
+  grid-column: 1 / span 2;
+  height: auto;
+  
+  border: 2px solid lightseagreen;
+}
+
+.grid-content p {
+  grid-column: 1 / span 2;
+  height: auto;
+  padding-bottom: 20px;
+  
+  border: 2px solid pink;
+  
+  font-family: serif;
+  
+  transition: all .25s;
+}
+
+.grid-content a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  
+  transition: all .25s;
+}
+
+.grid-content a:hover {
+  color: cornflowerblue;
+}
+
+/* what's going on here? */
+button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px;
+  
+  background-color: blueviolet;
+  border: none;
+  border-radius: 3px;
+  
+  font-family: serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  
+  transition: all .3s;
+}
+
+button:hover {
+  transform: translate(0px, -2px);
+  box-shadow: 0px 2px darkslateBlue;
+}
+
+.grid-content img {
+  grid-column: 1 / span 2;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  
+  border: 2px solid magenta;
+}
+
+.caption {
+  grid-column: span 1;
+  height: auto;
+  
+  border: 2px solid cornflowerblue;
+}
+
+.caption p {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+  color: grey;
+}
+
+.caption a {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: inherit;
+}
+
+.caption a:hover {
+  color: black;
+}
+
+.button {
+  display: block;
+  background-color: lightgreen;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid pink;
+  text-align: center;
+}
+
+.nav {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
+  position: sticky;
+  top: 0px;
+  height: 50vh;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-right: 20px;
+  
+  border: 2px solid green;
+}
+
+.logo-container {
+  align-self: end;
+  display: flex;
+  border: 2px solid salmon;
+  aspect-ratio: 1 / 1;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.nav a {
+  text-decoration: none;
+  text-align: right;
+}
+
+@media (max-width: 1080px) {
+  
+  .grid-main {
+    grid-template-columns: minmax(150px, auto) minmax(400px, 480px) minmax(150px, auto);
+  }
+  
+  .grid-content {
+    grid-template-columns: repeat(2, minmax(200px, 240px));
+  }
+  
+}
+
+@media (max-width: 700px) {
+  
+  .grid-main {
+    grid-template-columns: auto minmax(200px, 400px) auto;
+  }
+  
+  .nav {
+    grid-row: 2;
+    grid-column: 2 / span 1;
+    top: 100;
+    height: 100px;
+  }
+  
+  .grid-content {
+    grid-row: 3;
+    grid-template-columns: minmax(200px, 400px);
+  }
+  
+  .footer{
+    grid-row: 4;
+    grid-column: 2 / span 1;
+    height: 160px;
+  }
+  
+}
