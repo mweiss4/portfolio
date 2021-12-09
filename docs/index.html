@@ -4,65 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylesheets/style-global.css">
     <title>Home</title>
 </head>
 <body>
+    <div class="cover-background"></div>
     <div class="container">
-        <div class="grid-main">
-          <div class="header-left"></div>
-          <div class="header-center"></div>
-          <div class="header-right"></div>
-          <div class="nav">nav</div>
-      
-          <div class="grid-content">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
-            <div class="item">7</div>
-            <div class="item">8</div>
-            <div class="item">9</div>
-            <div class="item">10</div>
-            <div class="item">11</div>
-            <div class="item">12</div>
-            <div class="item">13</div>
-            <div class="item">14</div>
-            <div class="item">15</div>
-            <div class="item">16</div>
-            <div class="item">17</div>
-            <div class="item">18</div>
-            <div class="item">19</div>
-          </div>
-      <!--     <div class="right-column"></div> -->
-          <div class="footer">footer</div>
+    <!--  "cover"  -->
+    <div id="landing"></div>
+    <div class="grid-main">
+        <div class="cover-container">
+        <div class="cover-content">
+            <div class="scroller-container">
+            <div class="scroller-left">
+                <span>Forge</span>
+                <span>Draw</span>
+                <span>Create</span>
+                <span>Invent</span>
+                <span>Form</span>
+                <span>Synthesize</span>
+                <span>Explore</span>
+                <span>(blank)</span>
+                <span>Forge</span> <!-- should be the same as first item -->
+            </div>
+            <div class="scroller-center">+</div>
+            <div class="scroller-right">
+                <span>Format</span>
+                <span>Design</span>
+                <span>Collate</span>
+                <span>Index</span>
+                <span>Construct</span>
+                <span>Assemble</span>
+                <span>Catalog</span>
+                <span>(blank)</span>
+                <span>Format</span> <!-- should be the same as first item -->
+            </div>
+            </div>
+            <div class="cover-bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ipsum excepturi illo debitis iste, necessitatibus alias laboriosam distinctio nemo vel voluptatem esse vitae recusandae pariatur enim voluptates quam inventore natus, neque quaerat consequatur? Iusto, adipisci? Enim, cumque distinctio cupiditate aperiam accusamus ea amet ex quaerat dignissimos, vero ipsum perferendis ad?</div>
+            <div class="cover-buttons">
+            BUTTONS GO HERE
+            </div>
         </div>
-      </div>
-
-    <!-- <header>
-        <h1>Landing</h1>
-        "forge + format" animation
-        intro paragraph
-    </header>
-    <main>
+        <div class="progress-container">
+            <div class="progress-empty">
+            <div id="progress" class="progress-fill"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!--  main content area  -->
+    <div id="home" class="grid-main">
         <nav>
-            logo
-            <a href="#" target="_self">Home</a>
-            <a href="profile" target="_self">Profile</a>
-            <a href="contact" target="_self">Contact</a>
-            <a href="blog" target="_self">Blog</a>
+        <div class="logo-container">
+            <img src="https://picsum.photos/id/10/500/500" alt="placeholder">
+            <div class="menu-button-container">
+            <div class="menu-button"></div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Writings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
         </nav>
-        sorting options
-        <a href="works/work-template" target="_self">test work please ignore</a>
-        all works...
-    </main>
-    <footer>
-        social media
-        disclaimer / ownership info
-        contact me; featured in the above?
-    </footer> -->
+        <div class="header-center"></div>
+        <div class="header-right"></div>
+        <div class="grid-content">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <div class="item">17</div>
+        <div class="item">18</div>
+        <div class="item">19</div>
+        </div>
+    <!--     <div class="right-column"></div> -->
+        <div class="footer">footer</div>
+        </div>
+    </div>
+    <script>
+        var scrollableElement = document.body;
+        var scrollAmount = 0;
+        const progressBar = document.querySelector("#progress");
+        // const mainWindow = document.querySelector("#main");
+        const target = document.querySelector("#home");
+
+
+        window.addEventListener('scroll', testFunction());
+        window.addEventListener('scroll', () => {
+        if (scrollAmount < 1) {
+            scrollableElement.style.overflow = "hidden";
+        }
+        })
+
+        window.addEventListener('wheel', function(event) {
+        
+        if (scrollAmount < 1) {
+            if (event.deltaY < 0 && scrollAmount < 1) {
+            console.log('scrolling up');
+            } else if (event.deltaY > 0 && scrollAmount < 1) {
+            console.log('scrolling down');
+            scrollAmount += 0.1;
+            }
+        }
+        
+        });
+
+        function testFunction() {
+        let id = null;
+        const elem = document.getElementById("animate");   
+        clearInterval(id);
+        id = setInterval(frame, 1000 / 60);
+        function frame() {
+            if (scrollAmount >= 1) {
+            console.log("scrolled");
+            scrollAmount = 1;
+            scrollableElement.style.overflow = "visible";
+            window.scrollTo(0,0);
+            target.scrollIntoView({behavior: "smooth"});
+            clearInterval(id);
+            } else if (scrollAmount < 0.01) {
+            scrollAmount = 0;
+            } else {  
+            scrollAmount -= (0.01 * scrollAmount) + 0.01;
+            console.log(scrollAmount);
+            }
+            progressBar.style.height = (scrollAmount * 50) + "px";
+        }
+        }
+    </script>
 </body>
 </html>

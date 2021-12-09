@@ -1,0 +1,156 @@
+* { margin: 0; padding: 0; box-sizing: border-box; cursor: crosshair; }
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+    transition: inherit;
+    transform: inherit;
+}
+
+.container {
+    padding-top: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+
+    font-family: sans-serif;
+}
+
+.default {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+} 
+
+.divider {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    min-height: 20px;
+
+    padding: 10px;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+
+    font-family: initial;
+    font-size: initial;
+    font-weight: initial;
+    text-transform: initial;
+    color: initial;
+}
+
+h1 {
+    font-family: "ivyjournal", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 36px;
+    line-height: 48px;
+}
+
+h2 {
+    font-family: "ivyjournal", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 28px;
+    line-height: 34px;
+}
+
+h3 {
+    font-family: "termina", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 20px;
+    line-height: 26px;
+    /* text-transform: uppercase; */
+}
+
+h4 {
+    font-family: "termina", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    word-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+
+
+.p1 {
+    font-family: "ivyjournal", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+}
+
+.p1 a {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    /* border-bottom: 1px black solid; */
+
+    background: linear-gradient(90deg, blue 0% 50%, #eeeeee 50% 100%);
+    background-size: 200% 5px;
+    background-position: 100% 85%;
+
+    transition: background-position, .2s;
+    background-repeat: no-repeat;
+
+    /* background: linear-gradient(180deg, rgba(255,255,255,0) 0% 65%, rgba(230,230,230,1) 65% 95%, rgba(255,255,255,0) 95% 100%); */
+
+    /* background: linear-gradient(to left, #eeeeee, #eeeeee 100%);
+    background-position: 0 90%;
+    background-size: 100% 5px;
+    background-repeat: repeat-x; */
+}
+
+.p1 a:hover {
+    background-position: 0% 85%;
+    
+}
+
+*::selection {
+    color: blue;
+    background-color: rgb(240, 240, 240);
+}
+
+.p2 {
+    font-family: "termina", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+}
+
+.button {
+    width: max-content;
+    padding: 4px 10px;
+
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 3px;
+
+    font-family: "termina", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: white;
+    transition: color 0s, background-color 0.2s, border 0.25s;
+}
+
+.button:hover {
+    background-color: white;
+    color: blue;
+    /* border: 1px solid blue; */
+}
