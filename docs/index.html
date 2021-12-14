@@ -7,17 +7,19 @@
     <script src="lib/jquery-3.6.0.min.js"></script>
     <!-- <script src="main.js"></script> -->
 
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylesheets/style-global.css">
+    <link rel="stylesheet" href="style.css">
+
     <title>Home</title>
 </head>
 <body>
-    <div class="cover-background"></div>
+    
     <div class="container">
+
     <!--  "cover"  -->
-    <div id="landing"></div>
-    <div class="grid-main">
+    <section id="landing" class="grid-main">
         <div class="cover-container">
+        <div class="landing-background"></div>
         <div class="cover-content">
             <div class="scroller-container">
             <div class="scroller-left">
@@ -44,9 +46,16 @@
                 <span>Format</span> <!-- should be the same as first item -->
             </div>
             </div>
-            <div class="cover-bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ipsum excepturi illo debitis iste, necessitatibus alias laboriosam distinctio nemo vel voluptatem esse vitae recusandae pariatur enim voluptates quam inventore natus, neque quaerat consequatur? Iusto, adipisci? Enim, cumque distinctio cupiditate aperiam accusamus ea amet ex quaerat dignissimos, vero ipsum perferendis ad?</div>
+            <div class="cover-bio">
+                <p class="p1">Max Weiss, also known as Forge + Format, is a multidisciplinary designer and artist based in the city of Chicago who specializes in graphic design and illustration. His personal creative practices are centered largely around art and technology.</p>
+            </div>
             <div class="cover-buttons">
-            BUTTONS GO HERE
+                <div class="button-2">
+                    <a href="#">MORE INFORMATION</a>
+                </div>
+                <div class="button-2">
+                    <a href="#">CONTACT</a>
+                </div>
             </div>
         </div>
         <div class="progress-container">
@@ -55,57 +64,274 @@
             </div>
         </div>
         </div>
-    </div>
-    
+    </section>
+
     <!--  main content area  -->
-    <div id="home" class="grid-main">
+    <!-- <div id="home"></div> -->
+    <section id="home" class="grid-main">
         <nav>
-        <div class="logo-container">
-            <img src="https://picsum.photos/id/10/500/500" alt="placeholder">
-            <div class="menu-button-container">
-            <div class="menu-button"></div>
+            <div class="logo-container-container">
+            <div class="logo-container">
+                <img src="https://picsum.photos/id/10/500/500" alt="placeholder">
+                <div class="menu-button-container">
+                <div class="menu-button"></div>
+                </div>
             </div>
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Writings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+            </div>
+            <ul>
+                <li class="li-active">Home</li>
+                <li><a href="#">Writings</a></li>
+                <li><a href="profile" target="_self">Profile</a></li>
+                <li><a href="contact" target="_self">Contact</a></li>
+            </ul>
         </nav>
-        <div class="header-center"></div>
+        <div class="header-center">
+            <div class="gd-toggle"></div>
+            <div class="ill-toggle"></div>
+            <div class="etc-toggle"></div>
+        </div>
         <div class="header-right"></div>
         <div class="grid-content">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
-        <div class="item">10</div>
-        <div class="item">11</div>
-        <div class="item">12</div>
-        <div class="item">13</div>
-        <div class="item">14</div>
-        <div class="item">15</div>
-        <div class="item">16</div>
-        <div class="item">17</div>
-        <div class="item">18</div>
-        <div class="item">19</div>
+            <div class="project etc">
+                <div class="project-label">
+                    <h2>Bell Jar Timer</h2>
+                    <p class="p2">sculptural circuitry</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/bell-jar/cover_bell-jar.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project ill">
+                <div class="project-label">
+                    <h2>Synthetic Biology Presentation</h2>
+                    <p class="p2">iconography</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/sb-presentation/cover_sb-presentation.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project gd">
+                <div class="project-label">
+                    <h2>Change Donations</h2>
+                    <p class="p2">design and marketing</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/change-donations/cover_change-donations.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project etc">
+                <div class="project-label">
+                    <h2>Copywrong</h2>
+                    <p class="p2">photo manipulation</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/copywrong/cover_copywrong.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project etc">
+                <div class="project-label">
+                    <h2>Eerie Scene</h2>
+                    <p class="p2">3D modeling and rendering</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/eerie-scene/cover_eerie-scene.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project gd">
+                <div class="project-label">
+                    <h2>Hybrid Figures</h2>
+                    <p class="p2">poster design</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/hybrid-figures/hybrid-figures.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project gd">
+                <div class="project-label">
+                    <h2>Maps for the Future</h2>
+                    <p class="p2">generative art</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/maps-for-the-future/cover_maps-for-the-future.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project etc">
+                <div class="project-label">
+                    <h2>MASS-IV</h2>
+                    <p class="p2">concept art</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/MASS-IV/MASS-IV.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project gd">
+                <div class="project-label">
+                    <h2>Silken Fetters</h2>
+                    <p class="p2">publication design</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/silken-fetters/cover_silken-fetters.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project etc">
+                <div class="project-label">
+                    <h2>Uncanny Machine</h2>
+                    <p class="p2">3D modeling</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/uncanny-machine/cover_uncanny-machine.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project ill">
+                <div class="project-label">
+                    <h2>Visionary Drawing</h2>
+                    <p class="p2">large-format illustration</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/visionary-drawing/visionary-drawing.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project gd">
+                <div class="project-label">
+                    <h2>Cabbage Patch</h2>
+                    <p class="p2">book design</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/cabbage-patch/cover_cabbage-patch.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project etc">
+                <div class="project-label">
+                    <h2>Chasing Dawn</h2>
+                    <p class="p2">music production, identity design</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/chasing-dawn/cover_chasing-dawn.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project gd">
+                <div class="project-label">
+                    <h2>Koya Medical: Visual Identity</h2>
+                    <p class="p2">identity design</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/koya-medical/cover_koya-medical.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project etc">
+                <div class="project-label">
+                    <h2>Object Iteration</h2>
+                    <p class="p2">mixed media</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/object-iteration/cover_object-iteration.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project gd">
+                <div class="project-label">
+                    <h2>Personal Branding</h2>
+                    <p class="p2">identity design</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/personal-branding/cover_personal-branding.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project etc">
+                <div class="project-label">
+                    <h2>Pink Cake</h2>
+                    <p class="p2">sculpture</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/pink-cake/cover_pink-cake.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project gd">
+                <div class="project-label">
+                    <h2>Show Don't Tell 2020</h2>
+                    <p class="p2">identity design</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/sdt-2020/cover_sdt-2020.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project ill">
+                <div class="project-label">
+                    <h2>The Locker Shop</h2>
+                    <p class="p2">iconography, apparel design</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/the-locker-shop/cover_the-locker-shop.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project gd">
+                <div class="project-label">
+                    <h2>BLM Postcards</h2>
+                    <p class="p2">print production</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/BLM-postcards/cover_BLM-postcards.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project ill">
+                <div class="project-label">
+                    <h2>Exploded View</h2>
+                    <p class="p2">perspectival rendering</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/exploded-view/cover_exploded-view.jpg">
+                <a href="#"></a>
+            </div>
+            <div class="project">
+                <div class="project-label">
+                    <h2>Sample Work</h2>
+                    <p class="p2">description</p>
+                    <h4 class="in-progress">Documentation in progress</h4>
+                </div>
+                <img src="works/cover-PLACEHOLDER.jpg">
+                <a href="#"></a>
+            </div>
         </div>
-    <!--     <div class="right-column"></div> -->
-        <div class="footer">footer</div>
+        <div class="right-column">
+            <div class="btt">
+                <h4>← back to top</h4>
+            </div>
         </div>
+    </section>
     </div>
+    
+    <section id="footer">
+        <div class="footer-container grid-main">
+            <div class="footer-content">
+                <p class="p2">
+                    All content on this site is intellectual property of Max Weiss, unless clearly stated otherwise. Usage or reproduction of this work in any form without consent is strictly prohibited. (contact me)
+                </p>
+                <p class="p2">
+                    updated December 13th, 2021<br>// CURRENTLY IN DEVELOPMENT //
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $('.gd-toggle').click(function() {
+            $('.gd').toggle('fade');
+        $ })
+        $('.ill-toggle').click(function() {
+            $('.ill').toggle('fade');
+        $ })
+        $('.etc-toggle').click(function() {
+            $('.etc').toggle('fade');
+        $ })
+    </script>
+    <!--
     <script>
         var scrollableElement = document.body;
         var scrollAmount = 0;
         const progressBar = document.querySelector("#progress");
         // const mainWindow = document.querySelector("#main");
         const target = document.querySelector("#home");
+        const cover = document.querySelector(".cover-container");
+        const coverBackground = document.querySelector("#landing");
 
 
         window.addEventListener('scroll', testFunction());
@@ -128,6 +354,7 @@
         
         });
 
+
         function testFunction() {
         let id = null;
         const elem = document.getElementById("animate");   
@@ -135,21 +362,25 @@
         id = setInterval(frame, 1000 / 60);
         function frame() {
             if (scrollAmount >= 1) {
-            console.log("scrolled");
-            scrollAmount = 1;
-            scrollableElement.style.overflow = "visible";
-            window.scrollTo(0,0);
-            target.scrollIntoView({behavior: "smooth"});
-            clearInterval(id);
+                console.log("scrolled");
+                scrollAmount = 1;
+                scrollableElement.style.overflow = "visible";
+                window.scrollTo(0,0);
+                target.scrollIntoView({behavior: "smooth"});
+                clearInterval(id);
+                // setTimeout(function() {
+                //     cover.style.display = "none";
+                //     coverBackground.style.display = "none";
+                // }, 1000);
             } else if (scrollAmount < 0.01) {
-            scrollAmount = 0;
+                scrollAmount = 0;
             } else {  
-            scrollAmount -= (0.01 * scrollAmount) + 0.01;
-            console.log(scrollAmount);
+                scrollAmount -= (0.01 * scrollAmount) + 0.01;
+                console.log(scrollAmount);
             }
             progressBar.style.height = (scrollAmount * 50) + "px";
         }
         }
-    </script>
+    </script> -->
 </body>
 </html>

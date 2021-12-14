@@ -1,0 +1,102 @@
+@import url("https://use.typekit.net/lne3dma.css");
+
+h1 {
+    margin-bottom: 1ch;
+
+    font-family: "ivyjournal", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 36px;
+    line-height: 48px;
+}
+
+h2 {
+    font-family: "ivyjournal", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 28px;
+    line-height: 34px;
+}
+
+h3 {
+    margin-top: 1ch;
+    max-width: 30ch;
+
+    font-family: "termina", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 20px;
+    line-height: 26px;
+    /* text-transform: uppercase; */
+}
+
+h4 {
+    font-family: "termina", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    word-spacing: 0.15em;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+
+
+.p1 {
+    margin-bottom: 1.25ch;
+    max-width: 55ch;
+
+    font-family: "ivyjournal", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+}
+
+.p1 a {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    /* border-bottom: 1px black solid; */
+
+    background: linear-gradient(90deg, blue 0% 50%, #eeeeee 50% 100%);
+    background-size: 200% 5px;
+    background-position: 100% 85%;
+
+    transition: background-position, .2s;
+    background-repeat: no-repeat;
+
+    /* background: linear-gradient(180deg, rgba(255,255,255,0) 0% 65%, rgba(230,230,230,1) 65% 95%, rgba(255,255,255,0) 95% 100%); */
+
+    /* background: linear-gradient(to left, #eeeeee, #eeeeee 100%);
+    background-position: 0 90%;
+    background-size: 100% 5px;
+    background-repeat: repeat-x; */
+}
+
+.p1 a:hover {
+    background-position: 0% 85%;
+    
+}
+
+
+
+.p2 {
+    margin-bottom: 1.5ch;
+    max-width: 35ch;
+
+    font-family: "termina", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+}

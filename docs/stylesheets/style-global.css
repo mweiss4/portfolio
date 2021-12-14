@@ -1,10 +1,85 @@
 @import "style-color.css";
 @import "style-text.css";
 
+
+/* --- selectors contained below will modify ALL ELEMENTS --- */
+
+* { margin: 0; padding: 0; box-sizing: border-box; cursor: crosshair; }
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+    transition: inherit;
+    transform: inherit;
+}
+
+*::selection {
+    color: var(--blue1);
+    background-color: rgb(240, 240, 240);
+}
+
 .frame {
     border: 1px solid red;
 }
 
 .frame-fixed {
     border: 1px solid green;
+}
+
+/* --- selectors contained above will modify ALL ELEMENTS --- */
+
+
+.button-1 {
+    width: max-content;
+    padding: 4px 15px;
+
+    margin: 10px 7.5px 20px 7.5px;
+
+    background-color: var(--blue1);
+    border: 1px solid var(--blue1);
+    border-radius: 3px;
+
+    font-family: "termina", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: white;
+    transition: color 0s, background-color 0.2s, border 0.25s;
+}
+
+.button-1:hover {
+    background-color: white;
+    color: var(--blue1);
+    /* border: 1px solid blue; */
+}
+
+.button-2 {
+    width: max-content;
+    padding: 4px 30px;
+
+    margin: 10px 7.5px 20px 7.5px;
+
+
+    background-color: var(--blue1);
+    border: 1px solid white;
+    border-radius: 3px;
+
+    font-family: "termina", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: white;
+    transition: color 0s, background-color 0.2s, border 0.25s;
+}
+
+.button-2:hover {
+    background-color: white;
+    color: var(--blue1);
+    border: 1px solid white;
 }
