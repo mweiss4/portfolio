@@ -4,7 +4,7 @@
 
 /* --- selectors contained below will modify ALL ELEMENTS --- */
 
-* { margin: 0; padding: 0; box-sizing: border-box; cursor: crosshair; }
+* { margin: 0; padding: 0; box-sizing: border-box; cursor: crosshair; scroll-behavior: smooth; }
 
 a {
     text-decoration: inherit;
